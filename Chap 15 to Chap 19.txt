@@ -1,0 +1,84 @@
+What is list
+# if we want to define more than one variable we define multiple variable at at time
+# But python give us another way to define mutiple values in a single variable
+# This type of variable is called list
+?
+# how to initialize list:
+?
+# listName = [values]
+?
+names = ["faisal" , " hammad" , "amin"]
+print(names)
+['faisal', ' hammad', 'amin']
+0
+# Index number is address of a value just like your home address your house is value and your flat number is address
+# same way value has an address in list
+# we can also print a value by an index number
+?
+?
+names = ["faisal" , " hammad" , "amin"]
+print(names[0])
+faisal
+Adding values in list
+append , insert
+
+# in append function value is added at the end of the list
+cities = ["karachi" , "lahore" , "islamabad"]
+cities.append("pehswar")
+print(cities)
+['karachi', 'lahore', 'islamabad', 'pehswar']
+#in insert function we need to pass 2 arguments one is index number and the other is value it add the value at the
+# particular index'''
+cities = ["karachi" , "lahore" , "islamabad"]
+cities.insert(2,"quetta")
+print(cities[2])
+?
+quetta
+Deleting values from list
+.reomove()
+del listname[index number]
+#if you want to delete value through index number you can use del keyword
+cities = ["karachi" , "lahore" , "islamabad"]
+del cities[1]
+print(cities)
+?
+# You can see that the value in index 1 is deleted
+?
+['karachi', 'islamabad']
+# if you want to delete value by define value you can use remove function it finds the index unmber and delete the value
+cities = ["karachi" , "lahore" , "islamabad"]
+cities.remove("lahore")
+print(cities)
+['karachi', 'islamabad']
+Delete value By pop()
+cities = ["karachi" , "lahore" , "islamabad"]
+# pop function return the delete value from the list and it accepts index number as argument
+?
+cities = ["karachi" , "lahore" , "islamabad"]
+city_removed = cities.pop(1)
+print(cities)
+['karachi', 'islamabad']
+Slicing the values in list
+]
+# Slice is a fuction that copies the values of list and insert it in anaother list it accepts two index numbers as arguments
+cities = ["karachi" , "lahore" , "islamabad"]
+slicing_cities =  cities[0:2]
+print(slicing_cities)
+['karachi', 'lahore']
+Small application of slicing the values
+ages = [12, 13, 15 , 17 , 20 , 25]
+?
+firstIndex= int(input("from which index you want to copy: "))
+secondIndex= int(input("from which index till you want to copy:"))
+?
+slicing_values= ages[firstIndex:secondIndex+1]
+print(slicing_values)
+?
+print("orignal list is: ",ages)
+print("copied value",slicing_values)
+                
+from which index you want to copy: 2
+from which index till you want to copy:4
+[15, 17, 20]
+orignal list is:  [12, 13, 15, 17, 20, 25]
+copied value [15, 17, 20]
