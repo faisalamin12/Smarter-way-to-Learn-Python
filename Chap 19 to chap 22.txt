@@ -1,0 +1,55 @@
+Tuples
+# Tuples is just like a list with some diffrences
+# 1 List values is placed in square brackets but tuple values is placed in round brackets
+?
+L1 = ["apple" , 1 , "banana" , 2 ]
+T1 = ("apple" , 1 ,"banana" , 1)
+print("The list is: ", L1)
+print("The tuple is: ", T1)
+The list is:  ['apple', 1, 'banana', 2]
+The tuple is:  ('apple', 1, 'banana', 1)
+ 5 times because I run this cell 5 times
+# The major diffrence between List and tuples are List are Mutable means its value can be changed
+# Tuples are imutable means its value can not be changed means no adding values no removing
+L1.append("car")
+L1
+?
+# append("car")
+?
+# It generates error because it doesnot allow to add any value
+# It generates value "car" 5 times because I run this cell 5 times
+['apple', 1, 'banana', 2, 'car', 'car', 'car', 'car', 'car', 'car']
+For Loop
+lly iterated
+# Loop is a iterative process means it can perform same thing many  times
+?
+c = [1,2,3,4,5]
+?
+for x in c:
+    print(x)
+    
+    # For every itelration a single value of list is transer to x and then print it runs untill the list is totally iterated
+1
+2
+3
+4
+5
+Nested For Loop
+names = ["faisal" , "faizan" , "faheem"]
+f_name = ["amin" , "owais" , "saleem"]
+for x in  names:
+    for y in f_name:
+        print("names: ",x," f name: ", y)
+        
+ # It picks the first element of the firdt list and combine it with all the elemnets of second list then it picks the 
+ # second element of the first list and combine it with all the elements in second list and so on...
+?
+names:  faisal  f name:  amin
+names:  faisal  f name:  owais
+names:  faisal  f name:  saleem
+names:  faizan  f name:  amin
+names:  faizan  f name:  owais
+names:  faizan  f name:  saleem
+names:  faheem  f name:  amin
+names:  faheem  f name:  owais
+names:  faheem  f name:  saleem
