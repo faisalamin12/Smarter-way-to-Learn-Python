@@ -1,0 +1,100 @@
+Dictionary
+# Dictionary is just like an advance form of list. In list every  value has an index Number but in Dictionary there is a
+#Key-value pair
+?
+# How to define Dictionary
+obj1 = {
+    "name" : "faisal",
+    "father name" : "amin",
+    "Roll number" : "AIC000000"
+    
+}
+print(obj1)
+{'name': 'faisal', 'father name': 'amin', 'Roll number': 'AIC000000'}
+How to pick Information out of Dictionary
+# Every dictionary has a key value pair so if we want to get information we call its key to rint the value
+# dictionaryname[key]
+?
+print(obj1["name"])
+print(obj1["father name"])
+print(obj1["Roll number"])
+?
+faisal
+amin
+AIC000000
+Versatility Of keys and values
+# Kry can be a number or string as well as Values can be a number or string
+print("keys can be integer")
+obj2 = {
+    1: "faisal",  
+    2 : "hamza",
+    3: "faizan"
+}
+print(obj2)
+keys can be integer
+{1: 'faisal', 2: 'hamza', 3: 'faizan'}
+print("values can be Integer ")
+obj2 = {
+    "Mitcal Starc": 1,  
+    "Virat Kohli" : 2,
+    "Sakib al hasan": 3
+}
+print(obj2)
+values can be Integer 
+{'Mitcal Starc': 1, 'Virat Kohli': 2, 'Sakib al hasan': 3}
+Adding Information In Dictionary
+obj2 = {
+    "Mitcal Starc": 1,  
+    "Virat Kohli" : 2,
+    "Sakib al hasan": 3
+}
+?
+print("Before Adding\n",obj2)
+obj2["Muhammad Amir"] = 2
+?
+print("After Adding: ")
+print(obj2)
+?
+Before Adding
+ {'Mitcal Starc': 1, 'Virat Kohli': 2, 'Sakib al hasan': 3}
+After Adding: 
+{'Mitcal Starc': 1, 'Virat Kohli': 2, 'Sakib al hasan': 3, 'Muhammad Amir': 2}
+Removing Elements
+# To remove an element from dictionary the way is same as list 
+# del dictionaryName[key]
+del obj2["Muhammad Amir"]
+print (obj2)
+?
+?
+{'Mitcal Starc': 1, 'Virat Kohli': 2, 'Sakib al hasan': 3}
+customer_29876 = {"first name": "David", "last name": "Elliott", "address": "4803 Wellesley St."} 
+del customer_29876["address"] 
+print(customer_29876)
+{'first name': 'David', 'last name': 'Elliott'}
+Changing Values
+# We can see that the value of Mitchal starc is change from 2 to 6
+# TO change the value this is same as DEfine a value in ditionary
+?
+obj2["Mitcal Starc"] = 6
+print(obj2)
+?
+# We can see that the value of Mitchal starc is change from 2 to 6
+{'Mitcal Starc': 6, 'Virat Kohli': 2, 'Sakib al hasan': 3}
+Loopin Through Values
+for x in obj2.values():
+    print(x)
+6
+2
+3
+Looping Through Keys
+for x in obj2.keys():
+    print(x)
+Mitcal Starc
+Virat Kohli
+Sakib al hasan
+Looping Through keys and values
+for x,y in obj2.items():
+    print(x, y)
+Mitcal Starc 6
+Virat Kohli 2
+Sakib al hasan 3
