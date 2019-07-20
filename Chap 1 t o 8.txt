@@ -1,0 +1,68 @@
+Print
+# print is a statement through which you can print any statement you want
+# print a keyword of python so it is case sensitive
+?
+print("Muhammad Faisal")
+print("Muhammad Amin")
+print("A.I")
+Muhammad Faisal
+Muhammad Amin
+A.I
+Variables
+# Variable is aplace in which you can store any value either integer or string
+# Some Rules for naming variables
+?
+# 1. No spaces between them
+# 2. It shouldnot start by a number
+# 3. In place of space we write underscore (_)
+my_name = "faisal"
+my_age = 21
+my_course = "A.I"
+print(my_name)
+print(my_age)
+print(my_course)
+faisal
+21
+A.I
+Mathematical Operation
+a = 2+2
+b = 2-2
+c = 2*3
+d = 4/2
+?
+print(a)
+print(b)
+print(c)
+print(d)
+4
+0
+6
+2.0
+Pemdas Rule
+# P = parathesis
+# e = exponent
+# m = multiplication
+# d = divide
+# a = addition
+# s = subtration
+?
+a = (2+3)**2+4*5-1/1
+print(a)
+44.0
+Concatenating Text Strings
+# In math operation the + aperator is used to add to numbers
+# but an another use of + operator is to cocatenate two text strings
+a = 2
+b = 2
+print(a + b)
+4
+a = "faisal "
+b = "amin"
+print(a + b)
+faisal amin
+a = "2"
+b = "2"
+print(a + b)
+?
+# its answer is 22 because the value 2 is in qoutation and it brhaves like a text string and + operaror concatenate them
+22
